@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistral_AI_Models</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        }
+        .node-content {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 40px;
+            flex-wrap: nowrap;
+        }
+        .main-node > .node::before {
+            display: none;
+        }
+        .node::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: black;
+        }
+        .children::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 42px;
+            background: black;
+        }
+        .children::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            height: 2px;
+            background: black;
+            width: var(--line-width);
+            left: calc(var(--line-left) + 1px); /* Move the line slightly to the left */
+        }
+        .children.single-child::after {
+            display: none;
+        }
+        .node:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 0;
+            background: black;
+        }
+        #container {
+            margin-left: 40px; /* Add this line to move the whole graph to the right */
+        }
+        h1 {
+            text-align: center;
+            color: red
+        }
+        p {
+            text-align: center;
+        }
+        .linkedin-button {
+            display: inline-block;
+            background-color: #0077B5;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .linkedin-button:hover {
+            background-color: #005983;
+        }|
+    </style>
+</head>
+<body>
+<br></br>
+<h1>                                             </h1>
+<h1>Mistral AI LLM Models</h1>
+<p><center>Graph Created by Shankar Wagh. <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">LinkedIn</a></center></p>
+<div id='container' class='d-flex flex-column align-items-center'>
+
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral AI</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral 7B</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral 7b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Sept 27, 2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Open-mistral-7b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>The first dense model released by mistral ai</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Perfect for experimentation, customization, and quick iteration</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Matched the capabilities of models up to 30b parameters at the time of release</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mixtral 8x7B</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mixtral 8x7b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>January 2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Open-mixtral-8x7b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A sparse mixture of experts model</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Leverages up to 45b parameters but only uses about 12b during inference</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Leading to better inference throughput at the cost of more vram</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mixtral 8x22B</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mixtral 8x22b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>April 2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>64k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Open-mixtral-8x22b</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A bigger sparse mixture of experts model</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Leverages up to 141b parameters but only uses about 39b during inference</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Leading to better inference throughput at the cost of more vram</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral Small</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral small</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral-small-latest</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Suitable for simple tasks that one can do in bulk</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Classification, customer support, or text generation</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>No additional information available</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral Medium</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral medium</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral-medium-latest</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Ideal for intermediate tasks that require moderate reasoning</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Data extraction, summarizing a document, writing emails, writing a job description, or writing product descriptions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Will be deprecated in the coming months</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral Large</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral large</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral-large-latest</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Our flagship model that's ideal for complex tasks that require large reasoning capabilities or are highly specialized</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Synthetic text generation, code generation, rag, or agents</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>No additional information available</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Mistral Embeddings</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral embeddings</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>8k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Mistral-embed</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A model that converts text into numerical vectors of embeddings in 1024 dimensions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Enables retrieval and retrieval-augmented generation applications</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Achieves a retrieval score of 55.26 on mteb</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Codestral</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Name</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Codestral</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Max_tokens</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>32k</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Api_endpoint</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Codestral-latest</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A cutting-edge generative model that has been specifically designed and optimized for code generation tasks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Including fill-in-the-middle and code completion</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const adjustLineWidth = (children) => {
+            const firstChild = children.firstElementChild;
+            const lastChild = children.lastElementChild;
+            if (firstChild && lastChild) {
+                const firstChildRect = firstChild.getBoundingClientRect();
+                const lastChildRect = lastChild.getBoundingClientRect();
+                const containerRect = children.getBoundingClientRect();
+                const leftOffset = (firstChildRect.left + firstChildRect.width / 2) - containerRect.left;
+                const rightOffset = (lastChildRect.left + lastChildRect.width / 2) - containerRect.left;
+                const width = rightOffset - leftOffset;
+                children.style.setProperty('--line-width', width + 'px');
+                children.style.setProperty('--line-left', leftOffset + 'px');
+            }
+        };
+
+        const mainNode = document.querySelector('.main-node');
+        if (mainNode) {
+            adjustLineWidth(mainNode);
+        }
+
+        const childrenNodes = document.querySelectorAll('.children:not(.single-child)');
+        childrenNodes.forEach(adjustLineWidth);
+    });
+</script>
+</body>
+</html>

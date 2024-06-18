@@ -1,0 +1,1315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI LLM</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        }
+        .node-content {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 40px;
+            flex-wrap: nowrap;
+        }
+        .main-node > .node::before {
+            display: none;
+        }
+        .node::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: black;
+        }
+        .children::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 42px;
+            background: black;
+        }
+        .children::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            height: 2px;
+            background: black;
+            width: var(--line-width);
+            left: calc(var(--line-left) + 1px); /* Move the line slightly to the left */
+        }
+        .children.single-child::after {
+            display: none;
+        }
+        .node:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 0;
+            background: black;
+        }
+        #container {
+            margin-left: 40px; /* Add this line to move the whole graph to the right */
+        }
+        h1 {
+            text-align: center;
+            color: red
+        }
+        p {
+            text-align: center;
+        }
+        .linkedin-button {
+            display: inline-block;
+            background-color: #0077B5;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .linkedin-button:hover {
+            background-color: #005983;
+        }|
+    </style>
+</head>
+<body>
+<br></br>
+<h1>                                             </h1>
+<h1>OpenAi LLM Models</h1>
+<p><center>Graph Created by Shankar Wagh. <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">LinkedIn</a></center></p>
+<div id='container' class='d-flex flex-column align-items-center'>
+
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>1. GPT-4</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>14 march 2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can understand and generate natural language or code</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can accept image inputs and emit text outputs</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Exhibits human-level performance on various professional and academic benchmarks</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>2. GPT-4o</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>May 13, 2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, vision capabilities</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Accepts both text and image inputs and generates text outputs</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Performs well across non-english languages</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has excellent vision capabilities</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>3. GPT-4 Turbo</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Accepts text and image inputs and produces text outputs</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Faster and more affordable than gpt-4</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has the same high intelligence as gpt-4</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>4. GPT-4-0314</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A snapshot of gpt-4 from march 14th 2023</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Will only be supported for a three month period ending on june 14th 2023</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has the same capabilities as the base gpt-4 model</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>5. GPT-4-32k</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has the same capabilities as the base gpt-4 model</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has 4x the context length (32,768 tokens)</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can process longer input sequences</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>6. GPT-4-32k-0314</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A snapshot of gpt-4-32k from march 14th 2023</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Will only be supported for a three month period ending on june 14th 2023</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has the same capabilities as the base gpt-4-32k model</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>7. GPT-3.5</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>March 15, 2022</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, code generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can understand and generate natural language or code</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has improved performance and cost-effectiveness compared to gpt-3</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has a context length of 2,048 tokens</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>8. GPT-3.5-Turbo</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>March 1st 2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation, chat</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Optimized for chat but works well for traditional completion tasks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has a context length of 2,048 tokens</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Is updated with the latest model iteration</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>9. GPT-3.5-Turbo-Codex</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2021</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Code generation and understanding</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can generate and execute code from natural language commands</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can answer questions about code, explain code snippets, fix bugs, and suggest improvements</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has 12 billion parameters</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>10. GPT-3.5-Turbo-Davinci</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2022</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language understanding and generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can process large amounts of natural language data and generate coherent and diverse texts</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can answer questions, summarize texts, write essays, create stories, and perform many other natural language tasks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Is one of the most advanced and versatile ai models available today</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>11. GPT-3.5-Turbo-Curie</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text summarization and question answering</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can generate high-quality text for a variety of tasks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can handle multiple domains and languages</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Is based on the gpt-3 architecture</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>12. GPT-3.5-Turbo-Babbage</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text classification and sentiment analysis</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can take inputs such as tables, charts, graphs, or spreadsheets, and produce concise and accurate descriptions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can help data analysts, researchers, journalists, and anyone who works with data to communicate their findings more effectively</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Is designed to help with data analysis and visualization</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>13. DALL·E</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2021</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image generation and manipulation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can create images from text descriptions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can manipulate existing images based on text inputs</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has 12 billion parameters</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>14. TTS (Text-To-Speech)</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Audio</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text-to-speech synthesis</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can convert text into natural-sounding spoken audio</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has multiple voices and languages available</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can be used for various applications such as audiobooks, voice assistants, and more</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>15. Embeddings</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Numerical</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language processing</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can represent natural language in a numerical form</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can be used for tasks such as text classification, sentiment analysis, question answering, and more</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Capture the meaning and context of words and sentences</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>16. Whisper</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Audio</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Audio-to-text transcription</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can convert audio into text</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can perform tasks such as summarizing audio clips, extracting keywords, or generating captions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can be used for various applications such as podcast transcription, meeting notes, and more</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>17. Moderation</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Content moderation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can detect whether text may be sensitive or unsafe</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can be used for filtering out inappropriate content or flagging potential issues</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can help with content moderation and safety</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>18. Point-E</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'></div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text summarization</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can extract and summarize the main points from any text</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Uses a combination of self-attention and pointer networks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Is fast, accurate, and easy to use</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>19. Jukebox</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Audio</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2020</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Music generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can create music with lyrics and vocals</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can remix existing songs, change the style or genre of music, and generate songs from scratch</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has 5 billion parameters</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>20. CLIP</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2021</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image classification</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can classify images into thousands of categories based on text labels or captions</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can perform zero-shot learning, which means it can recognize objects or concepts that it has never seen before</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has 400 million parameters</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const adjustLineWidth = (children) => {
+            const firstChild = children.firstElementChild;
+            const lastChild = children.lastElementChild;
+            if (firstChild && lastChild) {
+                const firstChildRect = firstChild.getBoundingClientRect();
+                const lastChildRect = lastChild.getBoundingClientRect();
+                const containerRect = children.getBoundingClientRect();
+                const leftOffset = (firstChildRect.left + firstChildRect.width / 2) - containerRect.left;
+                const rightOffset = (lastChildRect.left + lastChildRect.width / 2) - containerRect.left;
+                const width = rightOffset - leftOffset;
+                children.style.setProperty('--line-width', width + 'px');
+                children.style.setProperty('--line-left', leftOffset + 'px');
+            }
+        };
+
+        const mainNode = document.querySelector('.main-node');
+        if (mainNode) {
+            adjustLineWidth(mainNode);
+        }
+
+        const childrenNodes = document.querySelectorAll('.children:not(.single-child)');
+        childrenNodes.forEach(adjustLineWidth);
+    });
+</script>
+</body>
+</html>

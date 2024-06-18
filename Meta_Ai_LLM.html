@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta_Ai_LLM</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        }
+        .node-content {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 40px;
+            flex-wrap: nowrap;
+        }
+        .main-node > .node::before {
+            display: none;
+        }
+        .node::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: black;
+        }
+        .children::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 42px;
+            background: black;
+        }
+        .children::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            height: 2px;
+            background: black;
+            width: var(--line-width);
+            left: calc(var(--line-left) + 1px); /* Move the line slightly to the left */
+        }
+        .children.single-child::after {
+            display: none;
+        }
+        .node:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 0;
+            background: black;
+        }
+        #container {
+            margin-left: 40px; /* Add this line to move the whole graph to the right */
+        }
+        h1 {
+            text-align: center;
+            color: red
+        }
+        p {
+            text-align: center;
+        }
+        .linkedin-button {
+            display: inline-block;
+            background-color: #0077B5;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .linkedin-button:hover {
+            background-color: #005983;
+        }|
+    </style>
+</head>
+<body>
+<br></br>
+<h1>                                             </h1>
+<h1>Meta AI LLM Models</h1>
+<p><center>Graph Created by Shankar Wagh. <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">LinkedIn</a></center></p>
+<div id='container' class='d-flex flex-column align-items-center'>
+
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Meta AI Models</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>SeamlessM4T</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release date</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Not specified</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>3d surface-based representation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Human body modeling</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A foundational model that maps all human pixels of an rgb image to a 3d surface-based representation of the human body.</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Maps human pixels to 3d surface-based representation</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Has applications in computer vision and human-computer interaction</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Can be used for tasks such as pose estimation and body tracking</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Llama 3</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release date</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Not specified</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Token-based encoding</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Language modeling</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A sequence modeling toolkit for training custom models for translation, summarization, and other text generation tasks.</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Uses a tokenizer with a vocabulary of 128k tokens</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Adopts grouped query attention (gqa) for improved inference efficiency</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Trained on a dataset with high-quality non-english data covering over 30 languages</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Llama Guard 2</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release date</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Not specified</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Trust and safety</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Language modeling</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>An updated component for trust and safety tools in llama 3.</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Provides updated components for trust and safety</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Helps to filter out insecure code produced by llms</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Works in conjunction with code shield for inference-time filtering</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Cybersec Eval 2</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release date</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Not specified</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Cybersecurity evaluation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Language modeling</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>A tool for evaluating the cybersecurity capabilities of llms.</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Expands on its predecessor by adding measures of an llm's propensity to allow for abuse</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Includes measures of offensive cybersecurity capabilities and susceptibility to prompt injection attacks</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Helps to identify potential security risks in llms</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Code Shield</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release date</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Not specified</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Inference-time filtering</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Language modeling</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Description</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>An inference-time guardrail for filtering insecure code produced by llms.</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Adds support for inference-time filtering of insecure code</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Works in conjunction with llama guard 2 for trust and safety</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Helps to prevent security risks in llms</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>CICERO</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release_year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding_type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language processing and strategic reasoning</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Natural language strategy game (diplomacy)</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key_points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>First ai agent to achieve human-level performance in diplomacy</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Combines strategic reasoning and natural language processing</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Achieved more than double the average score of human players on webdiplomacy.net</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const adjustLineWidth = (children) => {
+            const firstChild = children.firstElementChild;
+            const lastChild = children.lastElementChild;
+            if (firstChild && lastChild) {
+                const firstChildRect = firstChild.getBoundingClientRect();
+                const lastChildRect = lastChild.getBoundingClientRect();
+                const containerRect = children.getBoundingClientRect();
+                const leftOffset = (firstChildRect.left + firstChildRect.width / 2) - containerRect.left;
+                const rightOffset = (lastChildRect.left + lastChildRect.width / 2) - containerRect.left;
+                const width = rightOffset - leftOffset;
+                children.style.setProperty('--line-width', width + 'px');
+                children.style.setProperty('--line-left', leftOffset + 'px');
+            }
+        };
+
+        const mainNode = document.querySelector('.main-node');
+        if (mainNode) {
+            adjustLineWidth(mainNode);
+        }
+
+        const childrenNodes = document.querySelectorAll('.children:not(.single-child)');
+        childrenNodes.forEach(adjustLineWidth);
+    });
+</script>
+</body>
+</html>

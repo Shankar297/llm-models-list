@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>llm models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 4cm;
+            margin: 0;
+            height: 100vh;
+            background: url('main-no-logo.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white; /* Set default text color to white */
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Add margin to separate buttons from title */
+        }
+        .button {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            background-color: rgba(251, 255, 16, 0.726); /* Darker blue on hover */
+        }
+        .button img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .button span {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        h1 {
+            margin-top: 50px; /* Adjust margin for title */
+        }
+        h2 {
+            color: yellow;
+        }
+        .linkedin-button:hover {
+            color: pink;
+        }
+        .linkedin-button {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>All LLM Models</h1>
+    <h2>Created by Shankar Wagh.</h2>
+    <h3>Check on <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">LinkedIn</a> <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">Github</a></h3>
+    <div class="buttons-container">
+        <div class="button" onclick="window.open('Open_Ai_LLM_Models.html', '_blank')">
+            <img src="what-is-openai.webp" alt="Page 1">
+            <span>OpenAI LLM</span>
+        </div>
+        <div class="button" onclick="window.open('Google_Ai_LLM.html', '_blank')">
+            <img src="google2.0.0.1441125613.webp" alt="Page 2">
+            <span>Google LLM</span>
+        </div>
+        <div class="button" onclick="window.open('Meta_Ai_LLM.html', '_blank')">
+            <img src="Meta-Logo-500x281.png" alt="Page 3">
+            <span>Meta AI</span>
+        </div>
+        <div class="button" onclick="window.open('Mistral_AI_Models.html', '_blank')">
+            <br>
+            <img src="mistral_ai_image.webp" alt="Page 3">
+            <span>Mistral AI</span>
+        </div>
+    </div>
+</body>
+</html>

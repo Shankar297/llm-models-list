@@ -1,0 +1,934 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google_Ai_LLM</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        }
+        .node-content {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .children {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 40px;
+            flex-wrap: nowrap;
+        }
+        .main-node > .node::before {
+            display: none;
+        }
+        .node::before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: black;
+        }
+        .children::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 42px;
+            background: black;
+        }
+        .children::after {
+            content: "";
+            position: absolute;
+            top: 30px;
+            height: 2px;
+            background: black;
+            width: var(--line-width);
+            left: calc(var(--line-left) + 1px); /* Move the line slightly to the left */
+        }
+        .children.single-child::after {
+            display: none;
+        }
+        .node:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            width: 2px;
+            height: 0;
+            background: black;
+        }
+        #container {
+            margin-left: 40px; /* Add this line to move the whole graph to the right */
+        }
+        h1 {
+            text-align: center;
+            color: red
+        }
+        p {
+            text-align: center;
+        }
+        .linkedin-button {
+            display: inline-block;
+            background-color: #0077B5;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .linkedin-button:hover {
+            background-color: #005983;
+        }|
+    </style>
+</head>
+<body>
+<br></br>
+<h1>                                             </h1>
+<h1>Google AI LLM Models</h1>
+<p><center>Graph Created by Shankar Wagh. <a href="https://www.linkedin.com/in/shankar-wagh" target="_blank" class="linkedin-button">LinkedIn</a></center></p>
+<div id='container' class='d-flex flex-column align-items-center'>
+
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini Models</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.5 Flash</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>High volume, cost-effective applications</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max total tokens (input + output) is 1m</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max raw image size is 20 mb</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max video length is 1 hour</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.5 Pro</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2024</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text or code response with multimedia support</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max total tokens (input + output) is 1m</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max images per prompt is 3,000</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max audio length is approximately 8.4 hours</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.0 Pro</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text-only tasks</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max total tokens (input + output) is 32,760</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max output tokens is 8,192</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Supports supervised tuning</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.0 Pro Vision</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>2023</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image/video understanding</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max total tokens (input + output) is 16,384</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max video length is 2 minutes</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Supports text, image, and video inputs</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.0 Ultra</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Complex text tasks</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max tokens input is 8,192</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max tokens output is 2,048</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Optimized for instruction, code, and reasoning</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Gemini 1.0 Ultra Vision</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Joint text, images, and video inputs</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max tokens input is 8,192</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max tokens output is 2,048</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Optimized for complex tasks</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Embeddings models</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Embeddings for Text</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>text-embedding-004</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Text embeddings</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max token input is 3,072 (001) and 2,048 (others)</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Embedding dimension is 768</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Supports supervised tuning</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Embeddings for Text Multilingual</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>text-multilingual-embedding-002</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multilingual text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multilingual text embeddings</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max token input is 2,048</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Embedding dimension is 768</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Supports over 100 languages</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Embeddings for Multimodal</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>multimodalembedding</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Multimodal</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Compare content across models</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max token input is 32</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Embedding dimension is 128, 256, 512, or 1408</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max video length is 2 minutes</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Imagen model</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Imagen 2(imagegeneration@006)</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Image generation</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>High-quality image generation and editing</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max image output is 4</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Resolution is approximately 1500 pixels</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Supports object removal and insertion, outpainting, and product editing</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Code completion model</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>Codey for Code Completion(code-gecko)</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Code</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Code completion</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max input tokens is 2,048</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max output tokens is 64</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Fine-tuned for suggesting code completion</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>MedLM models</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>MedLM-medium</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Medical text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Medical q&a, summarization</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max tokens (input + output) is 32,768</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max output tokens is 8,192</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Hipaa-compliant</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-primary text-white'>MedLM-large</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Encoding type</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Medical text</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Release year</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>N/a</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Application</div>
+                <div class='children single-child'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Medical q&a, summarization</div>
+            </div>
+            
+                </div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-warning text-dark'>Key points</div>
+                <div class='children'>
+                    
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max input tokens is 8,192</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Max output tokens is 1,024</div>
+            </div>
+            
+            <div class='node'>
+                <div class='node-content bg-success text-white'>Hipaa-compliant</div>
+            </div>
+            
+                </div>
+            </div>
+            
+                </div>
+            </div>
+            
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const adjustLineWidth = (children) => {
+            const firstChild = children.firstElementChild;
+            const lastChild = children.lastElementChild;
+            if (firstChild && lastChild) {
+                const firstChildRect = firstChild.getBoundingClientRect();
+                const lastChildRect = lastChild.getBoundingClientRect();
+                const containerRect = children.getBoundingClientRect();
+                const leftOffset = (firstChildRect.left + firstChildRect.width / 2) - containerRect.left;
+                const rightOffset = (lastChildRect.left + lastChildRect.width / 2) - containerRect.left;
+                const width = rightOffset - leftOffset;
+                children.style.setProperty('--line-width', width + 'px');
+                children.style.setProperty('--line-left', leftOffset + 'px');
+            }
+        };
+
+        const mainNode = document.querySelector('.main-node');
+        if (mainNode) {
+            adjustLineWidth(mainNode);
+        }
+
+        const childrenNodes = document.querySelectorAll('.children:not(.single-child)');
+        childrenNodes.forEach(adjustLineWidth);
+    });
+</script>
+</body>
+</html>
